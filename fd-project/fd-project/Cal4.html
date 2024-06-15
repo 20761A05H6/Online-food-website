@@ -1,0 +1,111 @@
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html>
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <style>
+                body 
+                {
+                    background-image:"bg.jpg";		
+                    background-repeat:no-repeat;
+                    background-size:100% 100%;
+                      
+                   }
+            </style>
+       
+        <title>Cal4</title>
+        <script>
+            function fillCosts(){
+                var cb = document.getElementById("item1").value;
+                var db = document.getElementById("item2").value;
+                var mb = document.getElementById("item3").value;
+                var pb = document.getElementById("item4").value;
+
+                var totcost = 0;
+                var cbc = cb*40;
+                var dbc = db*30;
+                var mbc = mb*50;
+                var pbc = pb*30;
+                totcost = cbc+dbc+mbc+pbc;
+                 
+                document.getElementById("cbc").value = cbc;
+                document.getElementById("dbc").value = dbc;
+                document.getElementById("mbc").value = mbc;
+                document.getElementById("pbc").value = pbc;
+                document.getElementById("totcost").value = totcost;
+                
+                
+            }
+        </script>
+    </head>
+    
+    
+    
+    <body background="https://tse3.mm.bing.net/th?id=OIP.QJP8bcEKprh-yUy8Ni9EsQHaEK&pid=Api&P=0&w=354&h=199">
+<a href="dish.html" target="blank"><font size="5" color="ORANGE" ><b>DISHES</b></font> </a> 
+
+    <div> 
+        <font size="7">
+        <table align="center" width="50%" height="70%" >
+            <tr>
+               
+              <th><font size="10px">Item</font></th>
+                <td>     </td>
+                <th><font size="10px">Price</font></th>
+                <td>     </td>
+                <th><font size="10px">Quantity</font></th>
+                <td>     </td>
+                <th><font size="10px">Total</font></th>
+                <td>     </td>
+            
+            </tr>
+            <tr>
+                <td><h1>Dosa</h1></td>
+                <td>     </td>
+                <td><h1>40</h1></td>
+                <td>     </td>
+                <td> <h1><input type="number" value="" id="item1"></h1></td>
+                <td>     </td>
+                <td><h1><input type="text" id="cbc"></h1></td>
+            </tr>
+            <tr>
+                <td><h1>Idle</h1></td>
+                <td>     </td>
+                <td><h1>30</h1></td>
+                <td>     </td>
+               <td> <input type="number" value="" id="item2"></td>
+               <td>     </td>
+                <td><input type="text" id="dbc"></td>
+            </tr>
+            <tr>
+                <td><h1>Poori</h1></td>
+                <td>     </td>
+                <td><h1>50</h1></td>
+                <td>     </td>
+               <td> <input type="number" value="" id="item3"></td>
+               <td>     </td>
+                <td><input type="text" id="mbc"></td>
+            </tr>
+            <tr>
+                <td><h1>Vada</h1></td>
+                <td>     </td>
+                <td><h1>30</h1></td>
+                <td>     </td>
+               <td> <input type="number" value="" id="item4"></td>
+               <td>     </td>
+                <td><input type="text" id="pbc"></td>
+            </tr>
+            <tr>
+                <td style="font-size:10px"><a href="order_now.html" target="blank"><input type="button" name="confirm order" value="Confirm order"></a></td>
+                <td>        </td>
+                <td>   <input type="button" value="Calculate Cost"  onclick="fillCosts()"/>    </td>
+                <td style="text-align:center" colspan="2"><a href="dish.html" target="blank"><input type="button" name="cancel" value="Cancel order"></a></td>
+                <td>     </td>
+                <td><input type="text" id="totcost"></td>
+            </tr>
+        </table>
+        </font>
+        
+
+    </div>
+</body></html>
